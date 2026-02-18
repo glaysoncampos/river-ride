@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI RAID · River Raid estilo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div id="hud">
+            <div><span class="hud-label">⛽ COMBUSTÍVEL</span> <span id="fuelValue">100</span>%</div>
+            <div><span class="hud-label">🔥 PONTOS</span> <span id="scoreValue">0</span></div>
+            <div><span class="hud-label">🛡️ SHIELD</span> <span id="shieldTimer">0</span>s</div>
+            <div id="alertBox"></div>
+        </div>
+    </div>
+    <div id="controls">← → mover | [ESPAÇO] atirar</div>
+    <script src="./script.js"></script>
+</body>
+</html>
