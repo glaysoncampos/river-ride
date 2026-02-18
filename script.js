@@ -6,7 +6,7 @@
     const CONFIG = {
         game_config: {
             total_levels: 3,
-            win_score_per_level: 1000
+            win_score_per_level: 3000
         },
         audio_settings: {
             enabled: true,
