@@ -10,6 +10,7 @@ body {
     background: #0a0c14;
     min-height: 100vh;
     display: flex;
+    flex-direction: column; /* <--- ADICIONE ESTA LINHA OBRIGATÓRIA */
     align-items: center;
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
