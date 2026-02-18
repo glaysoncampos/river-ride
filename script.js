@@ -24,7 +24,7 @@
         },
         player: {
             fuel: 100,
-            fuel_loss_wrong_target: 30
+            fuel_loss_wrong_target: 10
         }
     };
 
