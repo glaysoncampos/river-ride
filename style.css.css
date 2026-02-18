@@ -1,0 +1,151 @@
+/* style.css - versão neon com suporte a fases */
+* {
+    box-sizing: border-box;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0a0c14;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#game-wrapper {
+    position: relative;
+    border: 4px solid #2ff3e0;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #00aaff, inset 0 0 10px #00aaff;
+    background: #021016;
+}
+
+canvas {
+    display: block;
+    width: 600px;
+    height: 600px;
+    background: #0a1a2f;
+    cursor: none;
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    background: rgba(0, 10, 26, 0.85);
+    backdrop-filter: blur(4px);
+    padding: 8px 18px;
+    border-radius: 60px;
+    border: 1px solid #0ff;
+    color: #b7f0ff;
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 20;
+    box-shadow: 0 4px 15px black;
+}
+
+.hud-label {
+    background: #113355;
+    padding: 4px 14px;
+    border-radius: 30px;
+    border: 1px solid #2faaff;
+}
+
+#fuelValue { color: #ffd966; }
+#scoreValue { color: #a3ff9e; }
+#shieldTimer { color: #ffe066; min-width: 40px; }
+
+#levelDisplay {
+    background: #52007c;
+    color: #f0b0ff;
+    padding: 6px 22px;
+    border-radius: 40px;
+    margin-left: auto;
+    border: 1px solid #cc88ff;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#bossHpContainer {
+    background: #3d0430;
+    color: #ff9ee8;
+    padding: 6px 22px;
+    border-radius: 40px;
+    border: 1px solid #ff66cc;
+    font-weight: bold;
+}
+
+#instructionBox {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0f2b3b;
+    color: #b5ffff;
+    padding: 10px 30px;
+    border-radius: 60px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 20px cyan;
+    white-space: nowrap;
+    z-index: 15;
+    text-shadow: 0 0 5px black;
+}
+
+#controls {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111c2b;
+    color: #b0e5ff;
+    padding: 4px 28px;
+    border-radius: 40px;
+    font-size: 0.95rem;
+    border: 1px solid #2fa0ff;
+    white-space: nowrap;
+    z-index: 15;
+}
+
+#transitionOverlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition: opacity 0.3s ease;
+}
+
+#transitionOverlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#transitionMessage {
+    font-size: 4rem;
+    color: #ffcc00;
+    text-shadow: 0 0 40px #ffaa00, 0 0 80px #ff5500;
+    font-weight: 900;
+    letter-spacing: 8px;
+    background: #0a0a1e;
+    padding: 40px 80px;
+    border-radius: 80px;
+    border: 4px solid gold;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}

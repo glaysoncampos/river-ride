@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI RAID · EVOLUTION (3 fases + som sintetizado)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="game-wrapper">
+        <div id="hud">
+            <div><span class="hud-label">⛽ COMBUSTÍVEL</span> <span id="fuelValue">100</span>%</div>
+            <div><span class="hud-label">🔥 PONTOS</span> <span id="scoreValue">0</span></div>
+            <div><span class="hud-label">🛡️ SHIELD</span> <span id="shieldTimer">0</span>s</div>
+            <div id="levelDisplay">FASE 1 · TEXT ERA</div>
+            <div id="bossHpContainer" style="display: none;">💀 BOSS <span id="bossHpValue">50</span></div>
+        </div>
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div id="instructionBox">DESTRUIR TEXTOS · EVITAR VÍDEOS</div>
+        <div id="controls">← → mover | [ESPAÇO] atirar</div>
+    </div>
+    <div id="transitionOverlay" class="hidden">
+        <div id="transitionMessage">LEVEL 2 START</div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
