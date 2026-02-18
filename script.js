@@ -308,7 +308,7 @@
         }
 
         // combustível
-        fuel = Math.max(0, fuel - 0.12);
+        fuel = Math.max(0, fuel - 0.04);
         if (fuel <= 0) { gameOver = true; instructionBox.innerText = 'GAME OVER · SEM COMBUSTÍVEL'; }
 
         // shield
