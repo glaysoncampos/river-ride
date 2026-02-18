@@ -105,7 +105,7 @@ canvas {
 #controls {
     /* Mudei de absolute para relative para ele sair de cima do jogo */
     position: relative; 
-    margin-top: 20px;    /* Cria um espaço de respiro entre o jogo e o texto */
+    margin-top: 50px;    /* Cria um espaço de respiro entre o jogo e o texto */
     
     /* Visual (mantive o seu original) */
     background: #111c2b;
